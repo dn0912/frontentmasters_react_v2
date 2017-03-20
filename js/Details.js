@@ -3,11 +3,11 @@ import React from 'react'
 const Details = React.createClass({
   render () {
     return (
-      <pre><code>
-        <div className='details'>
+      <div className='details'>
+        <pre><code>
           {JSON.stringify(this.props, null, 4)}
-        </div>
-      </code></pre>
+        </code></pre>
+      </div>
     )
   }
 })
