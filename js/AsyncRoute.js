@@ -1,7 +1,7 @@
 import React from 'react'
 const { object } = React.PropTypes
 
-const AsyncRoute = React.createClass ({
+const AsyncRoute = React.createClass({
   propTypes: {
     props: object,
     loadingPromise: object
@@ -13,7 +13,7 @@ const AsyncRoute = React.createClass ({
   },
   componentDidMount () {
     this.props.loadingPromise.then((module) => {
-      this.component = module
+      this.component = module.default
       this.setState({loaded: true})
     })
   },
@@ -25,3 +25,5 @@ const AsyncRoute = React.createClass ({
     }
   }
 })
+
+export default AsyncRoute

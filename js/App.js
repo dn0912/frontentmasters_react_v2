@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Match } from 'react-router'
+import { Match } from 'react-router'
 import { Provider } from 'react-redux'
 import store from './store'
 import AsyncRoute from './AsyncRoute'
@@ -17,7 +17,7 @@ const App = () => {
         <Match
           exactly
           pattern='/'
-          component={(props) => <AsyncRoute props={props} loadingpromise={System.import('./Landing')} />}
+          loadingPromise={(props) => <AsyncRoute props={props} component={System.import('./Landing')} />}
         />
         <Match
           pattern='/search'
