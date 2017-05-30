@@ -14,3 +14,6 @@ MIT
 
 
 mySecondcomponent
+
+V2:
+https://btholt.github.io/complete-intro-to-react-v2/all.html
