@@ -14,4 +14,3 @@ MIT
 Redux resources:
 firefox devtool
 reddit mobile
-testtest
